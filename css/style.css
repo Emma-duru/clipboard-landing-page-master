@@ -1,0 +1,237 @@
+:root {
+    --light-primary: hsl(171, 66%, 44%);
+    --dark-primary: hsl(233, 100%, 69%);
+    --light-secondary: hsl(201, 11%, 66%);
+    --dark-secondary: hsl(210, 10%, 33%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--dark-secondary);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3 {
+    font-weight: bold;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 2;
+    color: var(--light-secondary);
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/* Title Section Styling */
+.logo {
+    background-image: linear-gradient(to bottom, rgba(175, 173, 173, 0.1), rgba(255, 255, 255, 0.8)), url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.title img {
+    margin: 50px 0;
+    width: 100px;
+}
+
+.tag {
+    width: 50%;
+    margin: 70px auto;
+}
+
+.title .tag {
+    margin-top: 0;
+}
+
+.btns {
+    margin: 20px auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 3px;
+    color: #ffffff;
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(50, 50, 44, 0.33);
+    -moz-box-shadow: 3px 3px 9px 0px rgba(50, 50, 44, 0.33);
+    box-shadow: 3px 3px 9px 0px rgba(50, 50, 44, 0.33);
+}
+
+.btn:hover {
+    -webkit-box-shadow: 6px 6px 12px 0px rgba(50, 50, 44, 0.33);
+    -moz-box-shadow: 6px 6px 12px 0px rgba(50, 50, 44, 0.33);
+    box-shadow: 6px 6px 12px 0px rgba(50, 50, 44, 0.33);
+    color: #ffffff;
+}
+
+.ios-btn {
+    background-color: var(--light-primary);
+    border-bottom: 2px solid hsl(171, 55%, 37%);
+}
+
+.ios-btn:hover {
+    background-color: hsl(171, 50%, 40%);
+}
+
+.mac-btn {
+    background-color: var(--dark-primary);
+    border-bottom: 2px solid hsl(233, 57%, 56%);
+}
+
+.mac-btn:hover {
+    background-color: hsl(233, 54%, 55%);
+}
+
+/* Function Section Styling */
+.function-row {
+    margin-bottom: 80px;
+}
+
+.row p {
+    font-size: 0.8em;
+}
+
+.computer {
+    text-align: left;
+    position: relative;
+    right: 30px;
+}
+
+.computer-img {
+    width: 90%;
+}
+
+.text {
+    padding-top: 2.5%;
+}
+
+.each-function {
+    width: 80%;
+}
+
+.device-img {
+    width: 60%;
+    margin: auto;
+}
+
+.supercharge {
+    width: 80%;
+    margin: auto;
+}
+
+.supercharge img {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.supercharge div {
+    margin: auto;
+}
+
+.companies {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.companies img {
+    margin: 50px auto;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.footer-logo {
+    width: 50px;
+}
+
+footer p {
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: var(--dark-secondary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer p:hover {
+    color: var(--light-primary);
+}
+
+.icons img {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    filter: invert(53%) sepia(73%) saturate(371%) hue-rotate(122deg) brightness(96%) contrast(105%);
+}
+
+.attribution {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .computer {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        right: 0;
+    }
+
+    .tag {
+        width: 70%;
+    }
+
+    .computer-img, .each-function {
+        margin: 20px auto;
+    }
+
+    .footer-links div {
+        margin-top: 10px;
+    }
+
+    .footer-links p{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 555px) {
+    .logo {
+        background-image: linear-gradient(to bottom, rgba(175, 173, 173, 0.1), rgba(255, 255, 255, 0.8)), url(../images/bg-header-mobile.png); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 3px auto;
+    }
+
+    .tag, .each-function {
+        width: 90%;
+    }
+}
